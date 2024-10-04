@@ -1,0 +1,32 @@
+.container {
+    padding: 30px;
+}
+
+.drop-down {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.drop-down::before {
+    content: "▼";
+    color: green;
+}
+
+.drop-down.open::before {
+    content: "▶";
+    color: green;
+}
+
+.list {
+    list-style: none;
+    display: none;
+}
+
+.list.open {
+    display: block;
+}
